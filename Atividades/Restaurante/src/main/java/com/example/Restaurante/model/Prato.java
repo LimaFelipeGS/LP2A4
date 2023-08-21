@@ -6,6 +6,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -21,6 +23,9 @@ public class Prato {
     private String descricao;
     @Column
     private Double preco;
+
+    @ManyToMany(mappedBy = "pratos")
+    private List<Pedido> pedidos;
 
     public Prato(CardapioRequestDTO data) {
         this.titulo = data.nome();

@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -21,8 +23,13 @@ public class Pedido {
     @JoinColumn(name = "cliente_id")
     private Cliente cliente;
 
-    public Pedido(String title, Cliente cliente) {
+    @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "pedido-prato", joinColumns = @JoinColumn(name = "pedido_id"), inverseJoinColumns = @JoinColumn(name = "prato_id"))
+    private List<Prato> pratos;
+
+    public Pedido(String title, Cliente cliente, List<Prato> pratos) {
         this.title = title;
         this.cliente = cliente;
+        this.pratos = pratos;
     }
 }
