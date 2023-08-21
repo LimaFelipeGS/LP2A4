@@ -25,10 +25,9 @@ public class CardapioController {
         return pratos.stream().map(CardapioResponseDTO::new).toList();
     }
 
-    @DeleteMapping
-    public List<CardapioResponseDTO> deletePrato(@RequestBody CardapioIndexDTO data) {
-        pratos.removeIf(obj -> obj.getId() == data.id());
-        return pratos.stream().map(CardapioResponseDTO::new).toList();
+    @DeleteMapping("/{id}")
+    public void deletePrato(@PathVariable Long id){
+        cardapioRepository.deleteById(id);
     }
 
     @PutMapping
