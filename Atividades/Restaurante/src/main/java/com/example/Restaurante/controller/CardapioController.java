@@ -4,6 +4,7 @@ import com.example.Restaurante.dto.CardapioIndexDTO;
 import com.example.Restaurante.dto.CardapioRequestDTO;
 import com.example.Restaurante.dto.CardapioResponseDTO;
 import com.example.Restaurante.model.Prato;
+import com.example.Restaurante.repository.CardapioRepository;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -27,7 +28,7 @@ public class CardapioController {
 
     @DeleteMapping("/{id}")
     public void deletePrato(@PathVariable Long id){
-        cardapioRepository.deleteById(id);
+        CardapioRepository.deleteById(id);
     }
 
     @PutMapping
