@@ -1,10 +1,10 @@
 package com.example.Restaurante.controller;
 
-import com.example.Restaurante.dto.CardapioIndexDTO;
 import com.example.Restaurante.dto.CardapioRequestDTO;
 import com.example.Restaurante.dto.CardapioResponseDTO;
 import com.example.Restaurante.model.Prato;
 import com.example.Restaurante.repository.CardapioRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -13,27 +13,28 @@ import java.util.List;
 @RestController
 @RequestMapping("cardapio")
 public class CardapioController {
-    private List<Prato> pratos = new ArrayList<>();
+    @Autowired
+    CardapioRepository cardapioRepository;
 
     @GetMapping
     public List<CardapioResponseDTO> getAll() {
-        return pratos.stream().map(CardapioResponseDTO::new).toList();
+        return cardapioRepository.findAll().stream().map(CardapioResponseDTO::new).toList();
     }
 
     @PostMapping
-    public List<CardapioResponseDTO> addPrato(@RequestBody CardapioRequestDTO data) {
-        pratos.add(new Prato(data));
-        return pratos.stream().map(CardapioResponseDTO::new).toList();
+    public void addPrato(@RequestBody CardapioRequestDTO data){
+        cardapioRepository.save(new Prato(data));
+    }
+
+    @PutMapping("/{id}")
+    public void editarPrato(@PathVariable Long id, @RequestBody CardapioRequestDTO data){
+        Prato prato = new Prato(data);
+        prato.setId(id);
+        cardapioRepository.save(prato);
     }
 
     @DeleteMapping("/{id}")
     public void deletePrato(@PathVariable Long id){
-        CardapioRepository.deleteById(id);
-    }
-
-    @PutMapping
-    public List<CardapioResponseDTO> editPrato(@RequestBody CardapioResponseDTO data) {
-        
-        return pratos.stream().map(CardapioResponseDTO::new).toList();
+        cardapioRepository.deleteById(id);
     }
 }

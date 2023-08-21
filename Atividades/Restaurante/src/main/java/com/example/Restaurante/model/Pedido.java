@@ -1,5 +1,6 @@
 package com.example.Restaurante.model;
 
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -15,4 +16,13 @@ public class Pedido {
     private Long id;
     @Column
     private String title;
+
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "cliente_id")
+    private Cliente cliente;
+
+    public Pedido(String title, Cliente cliente) {
+        this.title = title;
+        this.cliente = cliente;
+    }
 }

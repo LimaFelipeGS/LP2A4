@@ -1,9 +1,12 @@
 package com.example.Restaurante.model;
 
+import com.example.Restaurante.dto.ClienteRequestDTO;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -20,4 +23,12 @@ public class Cliente {
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "endereco_id")
     private Endereco endereco;
+
+    @OneToMany(mappedBy = "cliente", cascade = CascadeType.ALL)
+    private List<Pedido> pedidos;
+
+    public Cliente(ClienteRequestDTO clienteRequestDTO) {
+        this.nome = clienteRequestDTO.nome();
+        this.endereco = clienteRequestDTO.endereco();
+    }
 }

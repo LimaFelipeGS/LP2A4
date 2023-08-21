@@ -1,6 +1,7 @@
 package com.example.Restaurante.model;
 
 import com.example.Restaurante.dto.CardapioRequestDTO;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -8,17 +9,22 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Table(name = "pratos")
+@Entity(name = "pratos")
 public class Prato {
-    private static Long idBase = 0L;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String nome;
+    @Column
+    private String titulo;
+    @Column
     private String descricao;
-    private double preco;
+    @Column
+    private Double preco;
 
     public Prato(CardapioRequestDTO data) {
-        this.nome = data.nome();
+        this.titulo = data.nome();
         this.descricao = data.descricao();
         this.preco = data.preco();
-        this.id = idBase++;
     }
 }
