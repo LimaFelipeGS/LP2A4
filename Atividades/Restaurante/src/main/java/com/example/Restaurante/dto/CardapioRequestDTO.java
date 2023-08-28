@@ -1,5 +1,5 @@
 package com.example.Restaurante.dto;
 
-public record CardapioRequestDTO(String nome, String descricao, double preco) {
+public record CardapioRequestDTO(String titulo, String descricao, double preco) {
 
 }
