@@ -33,10 +33,21 @@ public class PedidoController {
     @PostMapping
     public void savePedido(@RequestBody PedidoRequestDTO data) {
         List<Prato> p = new ArrayList<>();
-        for (Long id: data.pratos()) {
-            p.add(repositoryPratos.findById(id).get());
+        for (Prato id: data.pratos()) {
+            p.add(repositoryPratos.findById(id.getId()).get());
         }
-        repository.save(new Pedido(data.title(), repositoryCliente.findById(data.cliente()).get(), p));
+        repository.save(new Pedido(data.title(), repositoryCliente.findById(data.cliente().getId()).get(), p));
     }
 
+    @PutMapping("/{id}")
+    public void editarPedido(@PathVariable Long id, @RequestBody PedidoRequestDTO data) {
+        Pedido pedido = new Pedido(data);
+        pedido.setId(id);
+        repository.save(pedido);
+    }
+
+    @DeleteMapping("/{id}")
+    public void deletePedido(@PathVariable Long id) {
+        repository.deleteById(id);
+    }
 }

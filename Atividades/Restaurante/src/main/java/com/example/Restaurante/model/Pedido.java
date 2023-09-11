@@ -1,5 +1,6 @@
 package com.example.Restaurante.model;
 
+import com.example.Restaurante.dto.PedidoRequestDTO;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -23,6 +24,10 @@ public class Pedido {
     @JoinColumn(name = "cliente_id")
     private Cliente cliente;
 
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "funcionario_id")
+    private Funcionario funcionario;
+
     @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(name = "pedido-prato", joinColumns = @JoinColumn(name = "pedido_id"), inverseJoinColumns = @JoinColumn(name = "prato_id"))
     private List<Prato> pratos;
@@ -31,5 +36,11 @@ public class Pedido {
         this.title = title;
         this.cliente = cliente;
         this.pratos = pratos;
+    }
+
+    public Pedido(PedidoRequestDTO pedidoRequestDTO) {
+        this.title = pedidoRequestDTO.title();
+        this.cliente = pedidoRequestDTO.cliente();
+        this.pratos = pedidoRequestDTO.pratos();
     }
 }

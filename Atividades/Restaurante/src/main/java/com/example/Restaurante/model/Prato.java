@@ -28,7 +28,7 @@ public class Prato {
     private List<Pedido> pedidos;
 
     public Prato(CardapioRequestDTO data) {
-        this.titulo = data.nome();
+        this.titulo = data.titulo();
         this.descricao = data.descricao();
         this.preco = data.preco();
     }

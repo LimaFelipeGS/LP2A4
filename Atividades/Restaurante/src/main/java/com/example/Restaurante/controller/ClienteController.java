@@ -29,5 +29,14 @@ public class ClienteController {
 
     @CrossOrigin(origins = "*", allowedHeaders = "*")
     @PutMapping("/{id}")
+    public void editarCliente(@PathVariable Long id, @RequestBody ClienteRequestDTO data) {
+        Cliente cliente = new Cliente(data);
+        cliente.setId(id);
+        repository.save(cliente);
+    }
 
+    @DeleteMapping("/{id}")
+    public void deleteCliente(@PathVariable Long id) {
+        repository.deleteById(id);
+    }
 }

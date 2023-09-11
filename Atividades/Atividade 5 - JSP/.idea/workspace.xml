@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="97e220b9-2b2a-4446-acb3-04021ac6d1b8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/getAll.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/getCliente.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/newCliente.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JSP/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JSP/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JSP/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JSP/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JSP/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JSP/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JSP/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JSP/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JSP/src/main/java/model/Pessoa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JSP/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JSP/src/main/webapp/exCinco.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JSP/src/main/webapp/exDois.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JSP/src/main/webapp/exQuatro.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JSP/src/main/webapp/exSeis.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JSP/src/main/webapp/exTres.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JSP/src/main/webapp/exUm.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JSP/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Restaurante/src/main/java/com/example/Restaurante/controller/FuncionarioController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Restaurante/src/main/java/com/example/Restaurante/dto/FuncionarioRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Restaurante/src/main/java/com/example/Restaurante/dto/FuncionarioResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Restaurante/src/main/java/com/example/Restaurante/model/Funcionario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Restaurante/src/main/java/com/example/Restaurante/repository/FuncionarioRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Restaurante/src/main/java/com/example/Restaurante/controller/ClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Restaurante/src/main/java/com/example/Restaurante/controller/ClienteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Restaurante/src/main/java/com/example/Restaurante/controller/PedidoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Restaurante/src/main/java/com/example/Restaurante/controller/PedidoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Restaurante/src/main/java/com/example/Restaurante/dto/PedidoRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Restaurante/src/main/java/com/example/Restaurante/dto/PedidoRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Restaurante/src/main/java/com/example/Restaurante/model/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Restaurante/src/main/java/com/example/Restaurante/model/Pedido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Restaurante/src/main/java/com/example/Restaurante/model/Prato.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Restaurante/src/main/java/com/example/Restaurante/model/Prato.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2VFjViGywhyhIdyzbGYUSxm9Rtu" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/home/estudante1/Documentos/GitHub/LP2A4/Atividades/Restaurante"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Atividade 5 - JSP" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Atividade 5 - JSP" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JSP [jetty:run]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="jetty:run" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Maven.JSP [jetty:run]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="97e220b9-2b2a-4446-acb3-04021ac6d1b8" name="Changes" comment="" />
+      <created>1694438749049</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1694438749049</updated>
+    </task>
+    <servers />
+  </component>
+</project>
