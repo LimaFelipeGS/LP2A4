@@ -13,13 +13,20 @@ public class Endereco {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     @Column
-    private String cep;
-    @Column
-    private String estado;
-    @Column
     private String endereco;
     @Column
     private String pais;
+    @Column
+    private String estado;
+    @Column
+    private String cep;
+
+    public Endereco(String endereco, String pais, String estado, String cep) {
+        this.endereco = endereco;
+        this.pais = pais;
+        this.estado = estado;
+        this.cep = cep;
+    }
 
     public int getId() {
         return id;

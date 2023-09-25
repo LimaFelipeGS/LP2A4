@@ -17,26 +17,39 @@ public class Professor {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     @Column
-    private String genero;
-    @Column
-    private String email;
-    @Column
-    private String area;
-    @Column
-    private Date dataNascimento;
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "endereco_id")
-    private Endereco endereco;
-    @Column
-    private String jornada;
-    @Column
-    private String cpf;
+    private String nome;
     @Column
     private String sobrenome;
     @Column
+    private String cpf;
+    @Column
+    private String email;
+    @Column
     private String emailSecundario;
     @Column
-    private String nome;
+    private Date dataNascimento;
+    @Column
+    private String genero;
+    @Column
+    private String jornada;
+    @Column
+    private String area;
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "endereco_id")
+    private Endereco endereco;
+
+    public Professor(String nome, String sobrenome, String cpf, String email, String emailSecundario, Date dataNascimento, String genero, Endereco endereco, String jornada, String area) {
+        this.nome = nome;
+        this.sobrenome = sobrenome;
+        this.cpf = cpf;
+        this.email = email;
+        this.emailSecundario = emailSecundario;
+        this.dataNascimento = dataNascimento;
+        this.genero = genero;
+        this.endereco = endereco;
+        this.jornada = jornada;
+        this.area = area;
+    }
 
     public int getId() {
         return id;

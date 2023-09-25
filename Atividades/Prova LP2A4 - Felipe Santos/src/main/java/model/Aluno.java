@@ -19,31 +19,46 @@ public class Aluno {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     @Column
-    private String curso;
-    @Column
-    private String cpf;
-    @Column
-    private String genero;
-    @OneToMany(mappedBy = "aluno", cascade = CascadeType.ALL)
-    private List<Nota> notas;
-    @Column
-    private Date dataNascimento;
-    @Column
-    private int anoIngresso;
+    private String nome;
     @Column
     private String sobrenome;
     @Column
+    private String genero;
+    @Column
+    private String cpf;
+    @Column
+    private Date dataNascimento;
+    @Column
+    private String email;
+    @Column
     private String emailSecundario;
     @Column
-    private String emial;
+    private String curso;
+    @Column
+    private int semestreIngresso;
+    @Column
+    private int anoIngresso;
     @Column
     private String situacao;
     @Column
     private Double ira;
-    @Column
-    private String nome;
-    @Column
-    private int semestreIngresso;
+    @OneToMany(mappedBy = "aluno", cascade = CascadeType.ALL)
+    private List<Nota> notas;
+
+    public Aluno(String nome, String sobrenome, String genero, String cpf, Date dataNascimento, String email, String emailSecundario, String curso, int semestreIngresso, int anoIngresso, String situacao, Double ira) {
+        this.nome = nome;
+        this.sobrenome = sobrenome;
+        this.genero = genero;
+        this.cpf = cpf;
+        this.dataNascimento = dataNascimento;
+        this.email = email;
+        this.emailSecundario = emailSecundario;
+        this.curso = curso;
+        this.semestreIngresso = semestreIngresso;
+        this.anoIngresso = anoIngresso;
+        this.situacao = situacao;
+        this.ira = ira;
+    }
 
     public String getCurso() {
         return curso;
@@ -81,8 +96,8 @@ public class Aluno {
         return id;
     }
 
-    public String getEmial() {
-        return emial;
+    public String getEmail() {
+        return email;
     }
 
     public String getSituacao() {
@@ -137,8 +152,8 @@ public class Aluno {
         this.id = id;
     }
 
-    public void setEmial(String emial) {
-        this.emial = emial;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public void setSituacao(String situacao) {

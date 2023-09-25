@@ -16,23 +16,33 @@ public class Materia {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "professor_id")
-    private Professor professor;
     @Column
-    private String horario;
-    @Column
-    private int ano;
+    private String nome;
     @Column
     private String curso;
     @Column
     private String dia;
     @Column
+    private String horario;
+    @Column
     private int semestre;
+    @Column
+    private int ano;
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "professor_id")
+    private Professor professor;
     @OneToMany(mappedBy = "materia",cascade = CascadeType.ALL)
     private List<Nota> notas;
-    @Column
-    private String nome;
+
+    public Materia(String nome, String curso, String dia, String horario, int semestre, int ano, Professor professor) {
+        this.nome = nome;
+        this.curso = curso;
+        this.dia = dia;
+        this.horario = horario;
+        this.semestre = semestre;
+        this.ano = ano;
+        this.professor = professor;
+    }
 
     public Professor getProfessor() {
         return professor;
