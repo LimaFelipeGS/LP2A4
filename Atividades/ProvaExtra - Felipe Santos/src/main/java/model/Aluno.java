@@ -10,10 +10,9 @@ import java.util.Date;
 import java.util.List;
 
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "Aluno")
-@Entity(name = "Aluno")
+@Table
+@Entity
 public class Aluno {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -48,7 +47,7 @@ public class Aluno {
     @Column
     private Double somaNotas = (double) 0;
 
-
+    public Aluno(){}
     public Aluno(String nome, String sobrenome, String genero, String cpf, Date dataNascimento, String email, String emailSecundario, String curso, int semestreIngresso, int anoIngresso, String situacao) {
         this.nome = nome;
         this.sobrenome = sobrenome;

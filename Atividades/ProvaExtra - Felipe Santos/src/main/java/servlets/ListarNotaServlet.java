@@ -19,7 +19,7 @@ public class ListarNotaServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Session session = HibernateUtil.getSessionFactory().openSession();
 
-        List<Nota> notas = session.createQuery("from Nota ", Nota.class).list();
+        List<Nota> notas = session.createQuery("from Nota", Nota.class).list();
 
         req.setAttribute("Nota", notas);
         RequestDispatcher dispatcher = req.getRequestDispatcher("listarNota.jsp");

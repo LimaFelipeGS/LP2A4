@@ -19,7 +19,7 @@ public class ListarAlunoServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Session session = HibernateUtil.getSessionFactory().openSession();
 
-        List<Aluno> alunos = session.createQuery("from Aluno ", Aluno.class).list();
+        List<Aluno> alunos = session.createQuery("from Aluno", Aluno.class).list();
 
         req.setAttribute("Aluno", alunos);
         RequestDispatcher dispatcher = req.getRequestDispatcher("listarAluno.jsp");

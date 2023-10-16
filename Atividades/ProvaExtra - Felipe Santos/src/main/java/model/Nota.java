@@ -6,10 +6,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "Nota")
-@Entity(name = "Nota")
+@Table
+@Entity
 public class Nota {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -19,6 +18,8 @@ public class Nota {
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "aluno_id")
     private Aluno aluno;
+
+    public Nota(){}
 
     public Nota(Double nota, Aluno aluno) {
         this.nota = nota;

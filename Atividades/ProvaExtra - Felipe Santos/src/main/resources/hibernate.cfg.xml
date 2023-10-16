@@ -24,7 +24,7 @@
         <property name="hibernate.dbcp.maxIdle">10</property>
         <property name="hibernate.dbcp.minIdle">5</property>
         <property name="hibernate.dbcp.maxWaitMillis">-1</property>
-        <mapping class="model.Aluno" />
-        <mapping class="model.Nota" />
+        <mapping class="model.Aluno"/>
+        <mapping class="model.Nota"/>
     </session-factory>
 </hibernate-configuration>
