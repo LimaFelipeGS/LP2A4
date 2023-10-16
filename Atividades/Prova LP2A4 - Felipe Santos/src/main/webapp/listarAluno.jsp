@@ -27,8 +27,8 @@
                 <thead>
                 <tr>
                     <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Sobrenome</th>
                     <th scope="col">Handle</th>
                 </tr>
                 </thead>

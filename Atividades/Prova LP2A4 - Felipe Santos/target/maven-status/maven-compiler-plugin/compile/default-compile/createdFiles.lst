@@ -1,8 +1,12 @@
 servlets/AddProfessorServlet.class
 servlets/ListarProfessorServlet.class
+servlets/ListarMateriaServlet.class
 enuns/NivelAcademico.class
 enuns/Cursos.class
+servlets/ListarAlunoServlet.class
 model/Nota.class
+servlets/AddAlunoServlet.class
+servlets/AddNotaServlet.class
 util/FormatarData.class
 enuns/HorarioAula.class
 model/Materia.class
@@ -14,5 +18,6 @@ enuns/DiaSemana.class
 model/Aluno.class
 servlets/ObterEstadosServlet.class
 model/Endereco.class
+servlets/ListarNotaServlet.class
 model/Professor.class
 enuns/Areas.class
